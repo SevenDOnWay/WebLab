@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration</title>
+</head>
+<body>
+<header>
+  <h1>University Course Registration Portal</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalog.html">Course Catalog</a></li>
+      <li><a href="courseregister.html">Course Registration</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Student Course Registration</h2>
+    <form method="GET" action="confirmation.html">
+      <fieldset>
+        <legend>Student Information (Required)</legend>
+        <p>
+          <label for="student-name">Full Legal Name:</label><br>
+          <input type="text" id="student-name" name="student_name" required>
+        </p>
+
+        <p>
+          <label for="student-id">Student ID :</label><br>
+          <input
+                  type="text"
+                  id="student-id"
+                  name="student_id"
+                  required
+          >
+        </p>
+
+        <p>
+          <label for="student-email">University Email Address:</label><br>
+          <input type="email" id="student-email" name="student_email" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Semester Term (Choose One)</legend>
+        <p>
+          <input type="radio" id="term-fall" name="semester" value="Fall 2026" checked required>
+          <label for="term-fall">Fall 2026</label><br>
+
+          <input type="radio" id="term-spring" name="semester" value="Spring 2027">
+          <label for="term-spring">Spring 2027</label><br>
+
+          <input type="radio" id="term-summer" name="semester" value="Summer 2027">
+          <label for="term-summer">Summer 2027</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection (Select Desired Courses)</legend>
+        <p>
+          <input type="checkbox" id="course-cs101" name="courses" value="CS101">
+          <label for="course-cs101">CS101 - Introduction to Computer Science (4 cr)</label><br>
+
+          <input type="checkbox" id="course-cs301" name="courses" value="CS301">
+          <label for="course-cs301">CS301 - Data Structures &amp; Algorithms (4 cr)</label><br>
+
+          <input type="checkbox" id="course-cs210" name="courses" value="CS210">
+          <label for="course-cs210">CS210 - Computer Organization &amp; Architecture (3 cr)</label><br>
+
+          <input type="checkbox" id="course-cs320" name="courses" value="CS320">
+          <label for="course-cs320">CS320 - Database Systems &amp; Modeling (3 cr)</label><br>
+
+          <input type="checkbox" id="course-cs340" name="courses" value="CS340">
+          <label for="course-cs340">CS340 - Operating Systems Principles (4 cr)</label><br>
+
+          <input type="checkbox" id="course-cs405" name="courses" value="CS405">
+          <label for="course-cs405">CS405 - Computer Networks &amp; Protocols (3 cr)</label><br>
+
+          <input type="checkbox" id="course-cs450" name="courses" value="CS450">
+          <label for="course-cs450">CS450 - Artificial Intelligence &amp; Heuristics (3 cr)</label><br>
+
+          <input type="checkbox" id="course-cs470" name="courses" value="CS470">
+          <label for="course-cs470">CS470 - Software Engineering &amp; Architecture (4 cr)</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Submit Registration">
+        <input type="reset" value="Clear Form">
+      </p>
+    </form>
+  </section>
+</main>
+</body>
+</html>
